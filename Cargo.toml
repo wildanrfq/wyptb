@@ -1,0 +1,11 @@
+[package]
+name = "wyptb"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+scraper = "0.13.0"
+reqwest = { version = "0.11.11", features = ["blocking"] }
+num-format = "0.4.0"
