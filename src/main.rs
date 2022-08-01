@@ -66,8 +66,13 @@ fn main() -> Result<()> {
                 println!("You didn't pressed this button along with {didnt_pressed_count} {} other people, while {pressed_count} {} other people did.\n", didnt_pressed[1], pressed[1]);
             }
         } else {
-            println!("Goodbye!");
-            break Ok(());
+            if answer == "q" {
+                println!("Goodbye!");
+                break Ok(());
+            } else {
+                println!("Not a valid answer, starting another game...");
+                continue;
+            }
         }
     }
 }
